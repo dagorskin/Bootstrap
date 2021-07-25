@@ -1,7 +1,14 @@
 @import url('fonts.css')
 
+// Объявление переменных и присваивание
 $pink: #ff5656
 $turquoise_1: #1EACC7
+
+// Объявление миксина
+=btn__hover 
+  &:hover
+    background-image: none
+    background-color: $turquoise_1
 
 *
   font-family: 'Roboto', sans-serif
@@ -23,24 +30,21 @@ h2
   height: 50px
   background: #212121
   z-index: 3
-
-.nav-top__menu
-  display: flex
-  justify-content: space-around
-  align-items: center
-  margin: 0
-  padding: 8px 70px
-  height: 52px
-  list-style-type: none
-
-.nav-top__item:not(:last-child)
-  padding: 0 44px 0 0
-  border-right: 2px dotted #000
-
-.nav-top__link
-  font-weight: 300
-  font-size: 15px
-  color: #FFF
+  &__menu
+    display: flex
+    justify-content: space-around
+    align-items: center
+    margin: 0
+    padding: 8px 70px
+    height: 52px
+    list-style-type: none
+  &__item:not(:last-child)
+    padding: 0 44px 0 0
+    border-right: 2px dotted #000
+  &__link
+    font-weight: 300
+    font-size: 15px
+    color: #FFF
 
 .subheader
   position: absolute
@@ -48,91 +52,81 @@ h2
   width: 100%
   height: 87px
   background: rgba(0, 0, 0, 0.6)
-
-.subheader__logo
-  display: block
-  margin: 19px 0 0
-  max-width: 100%
-
-.subheader__subtext
-  font-weight: 100
-  font-size: 13px
-  color: #FFF
-  opacity: .6
-
-.subheader__call
-  margin: 19px 0 0
-  text-align: right
-  font-weight: 300
-  font-size: 12px
-  color: #FFF
-
-.subheader__tel
-  display: block
-  text-align: right
-  font-weight: 400
-  font-size: 22px
-
-.subheader_btn
-  display: block
-  margin: 19px 0 0
-  width: 172px
-  height: 46px
-  font-weight: 400
-  font-size: 14px
-  text-align: center
-  text-transform: uppercase
-  color: #FFF
-  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21)
-  background: linear-gradient(0deg, $turquoise_1 0%, #4CE2FF 100%)
-  box-shadow: inset 0px -3px 0px rgba(0, 0, 0, 0.12)
-  border-radius: 4px
-  border: none
+  &__logo
+    display: block
+    margin: 19px 0 0
+    max-width: 100%
+  &__subtext
+    font-weight: 100
+    font-size: 13px
+    color: #FFF
+    opacity: .6
+  &__call
+    margin: 19px 0 0
+    text-align: right
+    font-weight: 300
+    font-size: 12px
+    color: #FFF
+  &__tel
+    display: block
+    text-align: right
+    font-weight: 400
+    font-size: 22px
+  &_btn
+    display: block
+    margin: 19px 0 0
+    width: 172px
+    height: 46px
+    font-weight: 400
+    font-size: 14px
+    text-align: center
+    text-transform: uppercase
+    color: #FFF
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21)
+    background: linear-gradient(0deg, $turquoise_1 0%, #4CE2FF 100%)
+    box-shadow: inset 0px -3px 0px rgba(0, 0, 0, 0.12)
+    border-radius: 4px
+    border: none
+    +btn__hover
 
 .presentation
   padding: 150px 0 0
   min-height: 800px
-  background: url('../img/presentation/presentation-bg.jpg') center (center / cover) no-repeat
-
-.presentation__header
-  text-align: center
-  font-weight: 900
-  font-size: 60px
-  text-transform: uppercase
-  color: #FFF
-
-.presentation__subheader
-  text-align: center
-  font-weight: 900
-  font-size: 36px
-  text-transform: uppercase
-  color: #FFF
-
-.presentation__text
-  margin: 0 0 115px 0
-  max-width: 985px
-  text-align: center
-  font-weight: 400
-  font-size: 18px
-  color: #FFF
-
-.presentation__btn
-  display: block
-  margin: 0 auto
-  width: 259px
-  height: 63px
-  font-weight: 400
-  font-size: 18px
-  text-transform: uppercase
-  color: #FFF
-  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21)
-  background: linear-gradient(0deg, $turquoise_1 0%, #4CE2FF 100%)
-  box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.12)
-  border-radius: 4px
-  border: 0
-
-.benefits
-  height: 850px
+  background: url('../img/presentation/presentation-bg.jpg') center center / cover no-repeat
+  &__header
+    text-align: center
+    font-weight: 900
+    font-size: 60px
+    text-transform: uppercase
+    color: #FFF
+  &__subheader
+    text-align: center
+    font-weight: 900
+    font-size: 36px
+    text-transform: uppercase
+    color: #fff
+  &__text
+    margin: 10px 0 115px 0
+    max-width: 985px
+    text-align: center
+    font-weight: 400
+    font-size: 18px
+    color: #FFF
+  &__btn
+    display: block
+    margin: 0 auto
+    width: 259px
+    height: 63px
+    font-weight: 400
+    font-size: 18px
+    text-transform: uppercase
+    color: #FFF
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21)
+    background: linear-gradient(0deg, $turquoise_1 0%, #4CE2FF 100%)
+    box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.12)
+    border-radius: 4px
+    border: 0
+    @include btn__hover
 
 .plate
   margin: 0 auto 33px
@@ -155,42 +149,37 @@ h2
 
 .benefits
   padding: 20px 0 64px
-
-.benefits__container
-  display: flex
-  flex-direction: column
-  justify-content: space-between
-  height: 100%
-
-.benefits__card
-  display: flex
-  justify-content: center
-  align-items: center
-
-.benefits__pic
-  display: flex
-  justify-content: center
-  align-items: center
-  width: 116px
-  height: 116px
-  border-radius: 100%
-  background: $turquoise_1
-
-.benefits__text
-  margin: 0 0 0 25px
-  width: 370px
-
-.benefits__text-h
-  font-weight: 400
-  font-size: 17px
-  line-height: 21px
-  color: $turquoise_1
-
-.benefits__text-p
-  font-weight: 300
-  font-size: 15px
-  line-height: 21px
-  color: #202020
+  height: 850px
+  &__container
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    height: 100%
+  &__card
+    display: flex
+    justify-content: center
+    align-items: center
+  &__pic
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 116px
+    height: 116px
+    border-radius: 100%
+    background: $turquoise_1
+  &__text
+    margin: 0 0 0 25px
+    width: 370px
+  &__text-h
+    font-weight: 400
+    font-size: 17px
+    line-height: 21px
+    color: $turquoise_1
+  &__text-p
+    font-weight: 300
+    font-size: 15px
+    line-height: 21px
+    color: #202020
 
 .main-subheader
 	font-weight: 400
@@ -235,17 +224,39 @@ h2
 		display: flex
 		justify-content: center
 		align-items: center
+		position: relative
 		width: 29px
 		height: 29px
 		transition: .2s
 		border-radius: 100%
 		background: #000
 		cursor: pointer
-		img
-			max-width: 100%
-		&:hover
-			transform: rotate(360deg)
+		&::before
+			content: ''
+			display: block
+			width: 17px
+			height: 2px
+			background: $turquoise_1
 			transition: .4s
+		&::after
+			content: ''
+			position: absolute
+			display: block
+			width: 2px
+			height: 17px
+			background: $turquoise_1
+			transition: .4s
+		&:hover
+			&::before
+				width: 17px
+				height: 2px
+				transform: rotate(90deg)
+				transition: .4s
+			&::after
+				width: 2px
+				height: 17px
+				transform: rotate(90deg)
+				transition: .4s
 
 .uberx 
 	position: relative
@@ -282,3 +293,113 @@ h2
 		font-weight: 300
 		font-size: 17px
 		color: #222
+
+.requirements
+	padding: 65px 0 88px
+	min-height: 920px
+	&__block
+		margin: 30px 0
+	&__title
+		margin: 0 0 10px 0
+		font-weight: 400
+		font-size: 22px
+		color: $turquoise_1
+		&_pink
+			color: $pink
+	&__list
+		display: inline-block
+		padding: 0 0 0 20px
+		list-style-type: none
+	&__line
+		margin: 4px 0
+		&::before
+			content: ''
+			transform: translateY(-10%)
+			display: inline-block
+			vertical-align: middle
+			margin: 0 12px 0 0 
+			width: 21px
+			height: 20px
+			background: url('../img/requirements/check_blue.png') center center / cover no-repeat	
+		&_pink
+			&::before
+				background: url('../img/requirements/check_pink.png') center center / cover no-repeat
+	&__text
+		font-weight: 300
+		font-size: 17px
+		color: #222
+	&__subtext
+		font-weight: 300
+		font-size: 17px
+		color: $turquoise_1
+
+.worldwide 
+	height: 720px
+	background: #080816
+	&__container
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+		align-items: center
+		padding: 50px 0
+		height: 720px
+		background: url('../img/worldwide/worldwide_bg.png') center center / cover no-repeat
+	&__title
+		display: flex
+		flex-direction: column
+		align-items: center
+	&__plate
+		background: #FFF
+		color: #000
+	&__header, &__subheader
+		color: #FFF
+	&__link
+		font-weight: 400;
+		font-size: 15px;
+		text-align: center;
+		text-transform: uppercase;
+		color: #1FBAD6;
+
+.footer 
+	height: 150px
+	&__link-box
+		display: flex
+		justify-content: space-between
+	&__strip
+		margin: 10px auto 30px
+		width: 300px;
+		height: 7px;
+		background: #1FBAD6;
+
+.footer-social
+	display: flex
+	list-style-type: none
+	margin: 0 0 0 20px
+	padding: 0
+	&__item
+		display: flex
+		justify-content: center
+		align-items: center
+		width: 35px
+		height: 35px
+		background: #070716;
+		border-radius: 100%
+		&:not(:last-child)
+			margin: 0 8px 0 0
+	&__icon
+		height: 16px
+
+.footer-store
+	display: flex
+	list-style-type: none
+	margin: 0 20px 0 0
+	&__item
+		height: 27px
+		&:not(:last-child)
+			margin: 0 8px 0 0
+	&__icon 
+		height: 27px
+
+
+			
+		
