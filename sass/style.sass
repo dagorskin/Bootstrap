@@ -11,11 +11,14 @@ $turquoise_1: #1EACC7
     background-color: $turquoise_1
 
 *
-  font-family: 'Roboto', sans-serif
+	font-family: 'Roboto', sans-serif
 
 a
-  text-decoration: none
-  color: #FFF
+	text-decoration: none
+	color: #FFF
+
+ol, ul 
+	padding: 0
 
 h2
 	margin-bottom: 0
@@ -273,8 +276,8 @@ h2
 		background: #070716
 	&__center
 		position: absolute
-		left: 25%
-		transform: translateY(-55%)
+		left: 50%
+		transform: translateX(-50%) translateY(-55%)
 		width: 759px
 		height: 480px
 		z-index: 2
@@ -370,6 +373,13 @@ h2
 		width: 300px;
 		height: 7px;
 		background: #1FBAD6;
+	&__language
+		margin: 15px 0 0 100px
+		font-weight: 400;
+		font-size: 11px;
+		text-align: center;
+		text-transform: uppercase;
+		color: #1FBAD6;
 
 .footer-social
 	display: flex
@@ -388,6 +398,32 @@ h2
 			margin: 0 8px 0 0
 	&__icon
 		height: 16px
+
+.footer-nav
+	display: flex
+	flex-direction: column
+	align-items: center
+	&__first-list, &__second-list
+		display: flex
+		margin: 0 0 0 100px
+		list-style: none
+	&__first-item:not(:last-child)
+		margin: 0 45px 0 0
+	&__first-link
+		font-weight: 300;
+		font-size: 15px;
+		align-items: center;
+		text-transform: uppercase;
+		color: #070716;
+	&__second-item:not(:last-child)
+		margin: 0 20px 0 0
+	&__second-link
+		font-weight: 300;
+		font-size: 11px;
+		align-items: center;
+		text-transform: uppercase;
+		color: #999999;
+
 
 .footer-store
 	display: flex
