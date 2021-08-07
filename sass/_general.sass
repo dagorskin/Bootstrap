@@ -37,6 +37,9 @@ ul, ol
     font-size: 15px
     color: #FFF
 
+.hamburger
+	display: none
+
 .subheader
   position: absolute
   top: 50px
@@ -73,7 +76,7 @@ ul, ol
     text-align: center
     text-transform: uppercase
     color: #FFF
-    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21)
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21)
     background: linear-gradient(0deg, $turquoise_1 0%, #4CE2FF 100%)
     box-shadow: inset 0px -3px 0px rgba(0, 0, 0, 0.12)
     border-radius: 4px
@@ -92,7 +95,7 @@ ul, ol
     color: #FFF
   &__subheader
     text-align: center
-    font-weight: 900
+    font-weight: 700
     font-size: 36px
     text-transform: uppercase
     color: #fff
@@ -112,7 +115,7 @@ ul, ol
     font-size: 18px
     text-transform: uppercase
     color: #FFF
-    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21)
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21)
     background: linear-gradient(0deg, $turquoise_1 0%, #4CE2FF 100%)
     box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.12)
     border-radius: 4px
@@ -265,7 +268,7 @@ ul, ol
 	&__center
 		position: absolute
 		left: 50%
-		transform: translateY(-55%) translatex(-50%)
+		transform: translateY(-55%) translateX(-50%)
 		width: 759px
 		height: 480px
 		z-index: 2
@@ -284,6 +287,8 @@ ul, ol
 		font-weight: 300
 		font-size: 17px
 		color: #222
+		&_ex
+			display: none
 
 .requirements
 	padding: 65px 0 88px
@@ -345,11 +350,11 @@ ul, ol
 	&__header, &__subheader
 		color: #FFF
 	&__link
-		font-weight: 400;
-		font-size: 15px;
-		text-align: center;
-		text-transform: uppercase;
-		color: #1FBAD6;
+		font-weight: 400
+		font-size: 15px
+		text-align: center
+		text-transform: uppercase
+		color: #1FBAD6
 
 .footer 
 	height: 150px
@@ -358,16 +363,16 @@ ul, ol
 		justify-content: space-between
 	&__strip
 		margin: 10px auto 30px
-		width: 300px;
-		height: 7px;
-		background: #1FBAD6;
+		width: 300px
+		height: 7px
+		background: #1FBAD6
 	&__language
 		margin: 15px 0 0 110px
-		font-weight: 400;
-		font-size: 11px;
-		text-align: center;
-		text-transform: uppercase;
-		color: #1FBAD6;
+		font-weight: 400
+		font-size: 11px
+		text-align: center
+		text-transform: uppercase
+		color: #1FBAD6
 
 .footer-social
 	display: flex
@@ -380,7 +385,7 @@ ul, ol
 		align-items: center
 		width: 35px
 		height: 35px
-		background: #070716;
+		background: #070716
 		border-radius: 100%
 		&:not(:last-child)
 			margin: 0 8px 0 0
@@ -398,19 +403,19 @@ ul, ol
 	&__first-item:not(:last-child)
 		margin: 0 45px 0 0
 	&__first-link
-		font-weight: 300;
-		font-size: 15px;
-		align-items: center;
-		text-transform: uppercase;
-		color: #070716;
+		font-weight: 300
+		font-size: 15px
+		align-items: center
+		text-transform: uppercase
+		color: #070716
 	&__second-item:not(:last-child)
 		margin: 0 20px 0 0
 	&__second-link
-		font-weight: 300;
-		font-size: 11px;
-		align-items: center;
-		text-transform: uppercase;
-		color: #999;
+		font-weight: 300
+		font-size: 11px
+		align-items: center
+		text-transform: uppercase
+		color: #999
 
 .footer-store
 	display: flex
@@ -423,3 +428,5 @@ ul, ol
 			margin: 0 8px 0 0
 	&__icon 
 		height: 27px
+.xs-visible
+        display: none

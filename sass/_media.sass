@@ -1,9 +1,12 @@
-@media screen and ( max-width: 1200px)
+@media screen and (max-width: 1200px)
     .nav-top
         &__item:not(:last-child)
             padding: 0 22px 0 0
         &__link
             font-size: 12px
+    .subheader
+        &__logo-pic, &__subtext
+            margin: 0 0 0 25px
     .presentation
         &__header
             font-size: 45px
@@ -47,3 +50,296 @@
             height: 24px
         &__icon
             height: 24px
+
+@media screen and (max-width: 991px)
+    .nav-top
+        &__item:not(:last-child)
+            padding: 0 10px 0 0
+        &__link
+            font-size: 10px
+    .presentation
+        &__header
+            font-size: 40px
+        &__subheader
+            font-size: 26px
+        &__text
+            font-size: 13px
+    .subheader
+        &__logo
+            margin: 24px 0 0
+        &__subtext
+            font-size: 11px
+        &__tel
+            font-size: 20px
+        &__btn
+            margin: 24px 0 0
+            width: 150px
+            height: 40px
+            font-size: 12px
+    .main-header
+        font-size: 22px
+    .benefits
+        &__card
+            flex-direction: column
+            align-items: center
+            margin: 15px 0
+        &__text
+            margin: 10px 0 0 0
+        &__text-h
+            font-size: 15px
+        &__text-p
+            font-size: 12px
+    .mobile
+        &__subheader
+            font-size: 16px
+    .footer
+        &__strip
+            height: 3px
+        &__language
+            font-size: 7px
+            margin: 10px 0 0
+    .footer-social
+        flex-wrap: wrap
+        width: 80px
+    .footer-nav
+        &__first-list
+            margin: 0 0 0 10px
+        &__second-list
+            margin: 0 0 0 10px
+        &__first-link
+            font-size: 10px
+        &__second-link
+            font-size: 6px
+        &__first-item:not(:last-child)
+            margin: 0 10px 0 0
+        &__second-item:not(:last-child)
+            margin: 0 5px 0 0
+    .footer-store
+        justify-content: flex-end
+        flex-wrap: wrap
+        width: 80px
+        &__item:not(:last-child)
+            margin: 0 0 5px
+
+@media screen and (max-width: 767px)
+    .nav-top
+        &__link
+            display: block
+            font-size: 20px
+        &__item:not(:last-child)
+            margin: 0 0 22px 0
+            padding: 0
+            border: none
+        &__menu
+            position: fixed
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            top: 0
+            left: -100%
+            padding: 0
+            width: 50%
+            height: 100vh
+            background: rgba(0,0,0,.8)
+            transition: .5s all
+            &_active
+                left: 0
+        &__item
+            padding: 5px 0
+            width: 100%
+            text-align: center
+            &:not(:last-child)
+                padding: 5px 0        
+
+    .hamburger
+        display: block
+        position: absolute
+        right: 10px
+        top: 50%
+        transform:  translateY(-50%)
+        width: 26px
+        height: 18px
+        transition: .3s all
+        &_active
+            margin: 6px 0 0 0
+            span
+                &:not(:last-child)
+                    margin: 0 0 -2px 0
+                transition: .5s all
+                &:nth-child(1)
+                    transform: translateY(3px) rotate(45deg)
+                &:nth-child(2)
+                    display: none
+                &:nth-child(3)
+                    transform: translateY(3px) rotate(-45deg)
+        &__layer
+            transition: .3s all
+            display: block
+            height: 2px
+            width: 100%
+            background: #fff
+            &:not(:last-child)
+                margin: 0 0 6px 0
+    .xs-hidden
+        display: none  
+    .xs-visible
+        display: block  
+    .subheader
+        &__logo
+            margin: 30px 0 0
+        &__logo-pic
+            width: 100% 
+        &__tel
+            display: block
+            margin: 5px 0 0
+            font-weight: 400
+            font-size: 16px
+            text-align: center
+            text-transform: uppercase
+            color: #fff
+        &__btn
+            display: block
+            margin: 5px auto 0
+            width: 200px;
+            height: 40px;
+            font-size: 14px
+            &:hover
+                background: linear-gradient(0deg, $turquoise_1 0%, #4CE2FF 100%)
+    .presentation
+        &__btn:hover
+            background: linear-gradient(0deg, $turquoise_1 0%, #4CE2FF 100%)
+    .benefits
+        &__text
+            width: 480px
+        &__text-h
+            text-align: center
+    .uberx
+        &__center
+            width: 560px
+            background: url('../img/uberx/uberx-car.png') center center / contain no-repeat
+    
+@media screen and (max-width: 575px)
+    .header-top
+        height: 30px
+    .nav-top
+        height: 32px
+    .main-header
+        font-size: 15px
+    .main-subheader
+        font-size: 14px
+    .nav-top
+        &__menu
+            width: 100%
+    .subheader
+        top: 30px
+        height: 60px
+        &__logo
+            margin: 18px 0 0
+            img
+                width: 130px
+                height: 15px
+        &__tel
+            margin: 5px 0 0
+            font-size: 12px
+        &__btn
+            margin: 5px auto 0
+            width: 110px;
+            height: 22px;
+            font-size: 10px;
+    .presentation
+        padding: 80px 0 0
+        min-height: 400px  
+        &__header
+            margin: 0 0 20px
+            padding: 0 18px
+            font-size: 30px
+        &__subheader
+            font-size: 20px    
+        &__text
+            display: none 
+        &__btn
+            margin: 65px auto 0
+            width: 210px;
+            height: 50px;
+    .benefits
+        &__text
+            width: 100%
+    .mobile
+        padding: 28px 0 40px
+    .uberx
+        height: 393px
+        &__top
+            padding: 25px 0 0 
+            height: 393px
+        &__header, &__subheader
+            display: none
+        &__center
+            width: 300px
+            height: 190px
+            left: 50%
+            transform: translateY(-160%) translatex(-50%)
+            background: url('../img/uberx/uberx-car.png') center center / contain no-repeat
+        &__bottom
+            display: none    
+        &__bottom-text_ex
+            display: block
+            margin: 240px auto 0
+            font-weight: 300;
+            font-size: 17px;
+            text-align: center;
+            color: #fff;  
+    .requirements
+        padding: 22px 0
+        &__block
+            margin: 20px 0
+        &__list
+            padding: 0
+        &__title
+            font-size: 16px 
+        &__line
+            font-size: 14px
+    .worldwide
+        height: 360px
+        &__container
+            height: 360px
+    .footer
+        &__language
+            font-size: 11px
+        &__strip
+            margin: 22px auto
+            width: 255px
+        &__link-box
+            flex-direction: column-reverse
+            align-items: center
+    .footer-nav
+        order: 3
+        &__first-item:not(:last-child)
+            margin: 0 3px 0 0
+        &__first-link
+            font-size: 14px
+        &__second-link
+            margin: 0
+            font-size: 11px
+        &__second-list
+            margin: 0
+            justify-content: space-between
+            flex-wrap: wrap
+        &__second-item
+            margin: 0 24px
+            &:not(:last-child)
+                margin: 0 24px          
+    .footer-social
+        flex-wrap: nowrap
+        margin: 16px 0
+        width: 160px
+        order: 2
+    .footer-store
+        justify-content: center
+        flex-direction: row
+        margin: 0 0 30px 0
+        width: 300px
+        &__item:not(:last-child)
+            margin: 0 5px 0 0
+            
+
+    
