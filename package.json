@@ -1,0 +1,31 @@
+{
+  "name": "uber",
+  "version": "1.0.0",
+  "description": "New project from course Udemy Web Developer 2021",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dagorskin/Uber.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dagorskin/Uber/issues"
+  },
+  "homepage": "https://github.com/dagorskin/Uber#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-cli": "^2.3.0",
+    "sass": "^1.37.5"
+  },
+  "dependencies": {
+    "browser-sync": "^2.27.5",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^5.0.0"
+  }
+}
